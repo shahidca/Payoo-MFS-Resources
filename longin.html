@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <h1 class="text-4xl font-bold text-center">Welcome to successfully long In page</h1>
+    <!-- <h1 class="text-4xl font-bold text-center">Welcome to successfully long In page</h1> -->
     <main class="container mx-auto text-center mt-10">
         <div class="mockup-phone">
             <div class="camera"></div>
@@ -29,11 +29,12 @@
                   <div class="divider"></div>
                   <!-- button section here -->
                  <div>
-                    <button onclick="addMoneyButton()" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg font-bold text-xl">Add Money</button>
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg font-bold text-xl">Cash out</button>
+                    <button id="add-money-button" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg font-bold text-xl">Add Money</button>
+
+                    <button id="withdraw-button" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg font-bold text-xl" >Cash out</button>
                  </div>
                  <!-- Add Money section -->
-                 <div class="card bg-base-100   max-w-sm shrink-0 shadow-2xl mt-6">
+                 <div id="add-money-container" class="card bg-base-100   max-w-sm shrink-0 shadow-2xl mt-6">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -49,12 +50,12 @@
                       
                       </div>
                       <div class="form-control mt-6">
-                        <button id="longin-btn" class="btn btn-primary">Login</button>
+                        <button id="add-money-btn" class="btn btn-primary">Add Money</button>
                       </div>
                     </form>
                   </div>
                  <!-- Cash out  section -->
-                 <div id="cash-" class="card bg-base-100 hidden max-w-sm shrink-0 shadow-2xl mt-6">
+                 <div id="cash-out-container" class="card bg-base-100 hidden max-w-sm shrink-0 shadow-2xl mt-6">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">

@@ -1,11 +1,11 @@
 document.getElementById('longin-btn').addEventListener('click', function (e) {
     e.preventDefault()
-    const phoneNumber = document.getElementById('phone-number').value='';
+    const phoneNumber = document.getElementById('phone-number').value;
     console.log(phoneNumber);
-    const pinNumber = document.getElementById('pin-number').value='';
+    const pinNumber = document.getElementById('pin-number').value;
     console.log(pinNumber)
 
-    if (pinNumber === '3737'){
+    if (pinNumber ==3737){
         // alert("Successfully you are long in")
         window.location.href='/longin.html';
     }
