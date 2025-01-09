@@ -13,27 +13,27 @@
 </head>
 
 <body>
-    <h1 class="text-5xl font-bold text-center">Welcome to successfully long In page</h1>
+    <h1 class="text-4xl font-bold text-center">Welcome to successfully long In page</h1>
     <main class="container mx-auto text-center mt-10">
         <div class="mockup-phone">
             <div class="camera"></div>
             <div class="display">
-              <div class="artboard artboard-demo phone-2">
+              <div class="artboard artboard-demo phone-3">
                 <div class="stats shadow">
                     <div class="stat ">
                       
-                      <div class="stat-value font-bold text-4xl">89,400</div>
+                      <div id="current-balance" class="stat-value font-bold text-4xl">89400</div>
                       <div class="stat-desc font-bold text-xl mt-2">Available Balance</div>
                     </div>
                   </div>
                   <div class="divider"></div>
                   <!-- button section here -->
                  <div>
-                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg font-bold text-xl">Add Money</button>
+                    <button onclick="addMoneyButton()" class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg font-bold text-xl">Add Money</button>
                     <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg font-bold text-xl">Cash out</button>
                  </div>
                  <!-- Add Money section -->
-                 <div class="card bg-base-100  max-w-sm shrink-0 shadow-2xl mt-6">
+                 <div class="card bg-base-100   max-w-sm shrink-0 shadow-2xl mt-6">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -53,12 +53,40 @@
                       </div>
                     </form>
                   </div>
+                 <!-- Cash out  section -->
+                 <div id="cash-" class="card bg-base-100 hidden max-w-sm shrink-0 shadow-2xl mt-6">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold text-xl">Agent Number</span>
+                        </label>
+                        <input  type="text" placeholder="Enter 11 digit number" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold text-xl">Cash Out</span>
+                        </label>
+                        <input id="cash-out" type="text" placeholder="Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span  class="label-text font-bold text-xl">Password</span>
+                        </label>
+                        <input id="withdraw-pin-number" type="password" placeholder="password" class="input input-bordered" required />
+                      
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="withdraw-btn" class="btn btn-primary">Withdraw Money</button>
+                      </div>
+                    </form>
+                  </div>
                 
               </div>           
             </div>
           </div>
     </main>
     <script src="js/addmoney.js"></script>
+    <script src="js/withdraw.js"></script>
 
 </body>
 
