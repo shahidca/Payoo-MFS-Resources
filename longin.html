@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Long in page</title>
+    <!--  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
+
 <body>
-    <h1>Welcome to successfully long In page</h1>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laboriosam cumque vitae deleniti quasi vero nihil facere qui reiciendis natus, earum non amet accusamus, quibusdam, nostrum enim dicta obcaecati. Tempore rerum dolore, optio deleniti, enim omnis aspernatur soluta pariatur quia dolor voluptas sit, eos quaerat harum natus delectus vitae non et eligendi reiciendis laboriosam! Exercitationem totam tempora modi distinctio eligendi facilis veniam vitae sint maiores ratione non iure impedit et laudantium nesciunt libero commodi beatae minus, ullam eos illo molestias corporis?</p>
+    <h1 class="text-5xl font-bold text-center">Welcome to successfully long In page</h1>
+    <main class="container mx-auto text-center mt-10">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-2">
+                <div class="stats shadow">
+                    <div class="stat ">
+                      
+                      <div class="stat-value font-bold text-4xl">89,400</div>
+                      <div class="stat-desc font-bold text-xl mt-2">Available Balance</div>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                  <!-- button section here -->
+                 <div>
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg font-bold text-xl">Add Money</button>
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg font-bold text-xl">Cash out</button>
+                 </div>
+                 <!-- Add Money section -->
+                 <div class="card bg-base-100  max-w-sm shrink-0 shadow-2xl mt-6">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text font-bold text-xl">Add Money</span>
+                        </label>
+                        <input id="add-money" type="text" placeholder="Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span  class="label-text font-bold text-xl">Password</span>
+                        </label>
+                        <input id="pin-number" type="password" placeholder="password" class="input input-bordered" required />
+                      
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="longin-btn" class="btn btn-primary">Login</button>
+                      </div>
+                    </form>
+                  </div>
+                
+              </div>           
+            </div>
+          </div>
+    </main>
+    <script src="js/addmoney.js"></script>
+
 </body>
+
 </html>
